@@ -1,0 +1,60 @@
+#welcome_message{
+	position:absolute;	
+	top:60px;
+	left:50px;
+}
+
+#loginbox{
+	padding:10px;
+	background-color:#CCC;
+	width:350px;
+	border-width:2px;
+	border-style:solid;
+	border-radius:10px;
+	position:absolute;
+	top:60px;
+	left:870px;
+}
+
+#login_btn{
+	margin-left:125px;
+}
+
+label{
+	display:inline-block;
+	width:95px;
+}
+
+#gameslist{
+	margin-left:30px;	
+	background-color:#CCC;
+	border-width:3px;
+	border-style:solid;
+	border-radius:10px;
+	padding:20px;
+}
+
+#gameslist_title{
+	padding-bottom:30px;
+	font-size:24px;
+
+}
+
+.game{
+	margin-top:10px;	
+	
+}
+
+.gamename{
+	font-size:17px;	
+}
+
+#tictactoe_image{
+	width:150px;
+	height:150px;	
+}
+
+#connectfour_image{
+	width:162px;	
+	height:138px;
+}

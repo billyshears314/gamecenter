@@ -1,0 +1,15 @@
+table {
+	border-spacing:10px;
+	background-color:#fff44f;
+}
+
+
+td{
+	width:60px;
+	height:60px;
+}
+
+.space{
+	background-color:#EEE;
+	border-radius:30px;
+}

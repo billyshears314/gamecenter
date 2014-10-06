@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/connectfour.css' />
+  </head>
+  <body>
+
+	<button type="button" id="new_game_btn">New Game</button>		
+		
+		<div ng-app="" ng-controller="connectBoardController">				
+		
+		<span id="playerturn">Player Turn: {{playerturn}}</span>
+		
+		<div id="board2">		
+		
+		<table>
+		
+			<% for(var i=0; i<6; i++) { %>		
+		
+			<tr id="row<%=i%>" class="row">
+				
+				<% for(var j=0; j<7; j++) { %>
+				
+					<td class="space">
+						<div id="space<%=i*3+j%>" class="space">
+							
+						</div>
+					</td>				
+				
+				<% } %>
+										
+			</tr>
+			
+			<% } %>
+		</table>
+		
+		</div>
+		
+	</div>
+
+  </body>
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>  
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script src="javascripts/connectBoardController.js"></script>
+	<script src="javascripts/connectfour.js"></script>
+</html>

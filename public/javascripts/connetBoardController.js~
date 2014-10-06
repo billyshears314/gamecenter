@@ -1,0 +1,25 @@
+function connectBoardController($scope) {
+
+ $scope.space= []; 
+ $scope.playerturn = 1; 
+ 
+ var space = $scope.space;
+ /*
+	for(var i=0; i<6; i++){
+	
+		for(var j=0; j<7; j++){
+		
+			space[i*7+j].x=j;
+			space[i*7+j].y=i;
+			
+			space[i*7+j].value = -1;
+		
+		}
+	
+	} 
+	
+	console.log(JSON.stringify(space));
+
+ */
+}
+

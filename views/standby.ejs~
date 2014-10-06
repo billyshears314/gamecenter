@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/standby.css' />
+  </head>
+  <body>
+
+	<center><h2><%=title%> Standby</h2></center>
+	
+	<table>
+	
+		<tr>
+			<th id="game_name_header">Game Name</th>
+			<th id="players_in_game_header">#Players</th>
+			<th id="action_header">Action</th>
+		</tr>
+
+		<% for(var i=0; i<11; i++){ %>
+
+			<tr>
+
+					<td>
+					
+						<%if(typeof(games[i])!='undefined') {%>
+					
+							<%=games[i].gamename%>
+					
+						<%}%>		
+							
+					</td>								
+				
+					<td>
+						
+						<%if(typeof(games[i])!='undefined') { %>
+						
+							<%=games[i].players%>
+						
+						<% } %>					
+						
+					</td>
+					
+				
+				
+				<td>
+				
+				<%if(typeof(games[i])!='undefined') { %>
+				
+					<button type="button" id="join_btn">Join</button>
+				
+				<% }else{ %>
+				
+					&nbsp;
+				
+				<% } %>	
+				
+				</td>
+
+			</tr>
+		
+		<% } %>	
+	
+	</table>
+	
+  </body>
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>  
+</html>

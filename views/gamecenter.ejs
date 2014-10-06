@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/gamecenter.css' />
+  </head>
+  <body>
+
+	<center><h2>Game Center</h2></center>
+	
+	<span id="welcome_message">Hello, guest123</span>	
+	
+	<div id="loginbox">	
+	
+	<form>
+		<label id="username_label">Username: </label><input type="text" name="username"><br>
+		<label id="password_label">Password: </label><input type="text" name="password"><br>
+	</form> 
+	
+	<button type="button" id="login_btn">Login</button>
+	<button type="button" id="sign_up_btn">Sign Up</button>
+	
+	</div>
+	
+	<div id="gameslist">
+
+		<span id="gameslist_title">Games List</span>	
+		<br>
+		
+		<div class="game">
+			<a href="standby?gametype=tictactoe" class="gamename">Tic Tac Toe</a>	
+			<br>
+			<a href="standby?gametype=tictactoe"><img id="tictactoe_image" src="images/tictactoe.png"></img></a>
+		</div>
+		<div class="game">
+			<br>
+			<a href="standby?gametype=connectfour" class="gamename">Connect Four</a>
+			<br>
+			<a href="standby?gametype=connectfour"><img id="connectfour_image" src="images/connectfour.png"></img></a>	
+		</div>
+	</div>
+	
+  </body>
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>  
+</html>

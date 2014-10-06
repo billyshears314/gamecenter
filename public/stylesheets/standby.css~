@@ -1,0 +1,33 @@
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+tr{
+  height:27px;
+}
+
+tr:nth-child(even) {
+	background: #CCC
+}
+
+tr:nth-child(odd) {
+	background: #FFF
+}
+
+#game_name_header{
+	width:200px;
+}
+
+#players_in_game_header{
+	width:150px;
+}
+
+#join_btn{
+	color:#000;
+	width:50px;
+}
+
+th{
+	text-align:left;
+}

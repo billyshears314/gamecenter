@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	 <link rel='stylesheet' href='/theme/jquery-ui.css' />
+	 <link rel="stylesheet" href="/theme/jquery-ui.min.css">
+		<script src="/theme/external/jquery/jquery.js"></script>
+		<script src="/theme/jquery-ui.min.js"></script>
+  </head>
+  <body>
+
+	<button type="button" id="new_game_btn" class="ui-button">New Game</button>		
+		
+	<div ng-app="" ng-controller="boardController">				
+		
+		<span id="playerturn">Player Turn: {{playerturn}}</span>
+		
+		<div id="board">		
+		
+		<table>
+		
+			<% for(var i=0; i<3; i++) { %>		
+		
+			<tr id="row<%=i%>" class="row">
+				
+				<% for(var j=0; j<3; j++) { %>
+				
+					<td id="space<%=i*3+j%>" class="space">
+						<center>{{space[<%=i*3+j%>].str}}</center>
+					</td>				
+				
+				<% } %>
+										
+			</tr>
+			
+			<% } %>
+		</table>
+		
+		</div>
+		
+	</div>
+	
+  </body>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script src="javascripts/boardController.js"></script>
+	<script src="javascripts/game.js"></script>
+</html>
